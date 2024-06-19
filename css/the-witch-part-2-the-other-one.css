@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  background: black;
+}
+/*-------------------------------------*\
+  #BODY
+\*-------------------------------------*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-ms-overflow-style {
+  display: none;
+}
+
+body-scrollbar-width {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
