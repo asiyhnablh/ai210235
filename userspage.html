@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/userspage.css" />
+    <!--ICON ON TAB-->
+    <link rel="shorcut icon" href="image/favicon/favicon.png" type="image/x-ico" />
+    <!--GOOGLE LAPIS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--TITLE ON TAB-->
+    <title>Userspage</title>
+  </head>
+  <body>
+    <!----HEADER SECTION -->
+    <div class="header">
+      <div class="navbar">
+        <img src="image/logo/icon.png" alt="logo" />
+        <a href="homepage.html"><b>Home</b></a>
+        <a href="movie-page.html"><b>Movie</b></a>
+        <a href="tv-shows-page.html"><b>Tv Shows</b></a>
+        <a href="userspage.html" class="right"
+          ><i class="fa fa-user-circle" style="font-size: 30px;"></i
+        ></a>
+
+        <div class="search-container">
+          <form
+            class="search-icon"
+            action="/action_page.php"
+            style="margin: auto; max-width: 300px;"
+          >
+            <input
+              type="text"
+              position="left"
+              placeholder="Search.."
+              name="search"
+            />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!--BACKGROUND SECTION -->
+
+    <div class="bg-image">
+      <img
+        src="data:image/jpeg;base64,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"
+        style="
+          float: left;
+          padding: 12px;
+          margin-top: -5em;
+          margin-left: -3em;
+          border-radius: 20px;
+          width: 18%;
+          height: 20%;
+        "
+      />
+      <p
+        style="
+          margin-top: -50px;
+          margin-left: 9em;
+          width: 200px;
+          padding: 10px;
+          border-radius: 10px;
+          opacity: 100;
+          font-style: #000000;"
+      >
+        <b>Chill Dude</b>
+      </p>
+      <p>User id: 5480957</p>
+    </div>
+
+    <!-- Movie Section Start -->
+    <div class="main">
+      <h2 style="color: white; margin-left: 40px;">History</h2>
+      <div class="hero-container">
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"><img src="image/userspage/chainsaw man.jpg" class="poster" /></a>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"><img src="image/userspage/ghost doctor.jpg" class="poster" /></a>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"><img src="image/userspage/big mouth.jpg" class="poster" /></a>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"
+              ><img src="image/userspage/descendents of the sun.jpg" class="poster"
+            /></a>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"
+              ><img src="image/userspage/train to busan.jpg" class="poster" /></a
+            >
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"><img src="image/userspage/connect.jpg" class="poster" /></a>
+          </div>
+        </div>
+        <div class="arrow-container">
+          <a href="">
+            <img src="image/userspage/arrow.png" 
+            style="widows: 20px; height: 30px; margin-top: 110px;
+            margin-left:100px;"/>
+          </a>
+      </div>
+      </div>
+      <br>
+      <br>
+      <h2 style="color: white; margin-left: 40px;">My List</h2>
+      <div class="hero-container">
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"><img src="image/userspage/spy family.jpg" class="poster" /></a>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"><img src="image/userspage/lookism.jpg" class="poster" /></a>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"><img src="image/userspage/weak hero.jpg" class="poster" /></a>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"
+              ><img src="image/userspage/miracle in cell.jpg" class="poster"
+            /></a>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"
+              ><img src="image/userspage/emergency declaration.jpg" class="poster"
+            /></a>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="poster-container">
+            <a href="#"><img src="image/userspage/dr stone.jpg" class="poster" /></a>
+          </div>
+        </div>
+        <div class="arrow-container">
+          <a href="">
+            <img src="image/userspage/arrow.png" 
+            style="widows: 20px; height: 30px; margin-top: 110px;
+            margin-left:100px;"/>
+          </a>
+      </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--- BUTTON SECTION --->
+    <div>
+    <button type="button" class="notificationsbtn" onclick="window.location.href='#';"">Notifications &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#8250;</button>
+    <button type="button" class="settingsbtn" onclick="window.location.href = '#';">Settings &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#8250;</button>
+    <br>
+    <br>
+    <button type="button" class="logoutbtn" onclick="window.location.href = 'index.html';">Log Out</button>
+    </div>
+   
+    <!--- #FOOTER SECTION --->
+
+ <section class="footer">
+
+  <br>
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size: 20px; position: center;">&#8593;</button>
+    </div>
+  </br>
+
+  <div class="footer-container">
+
+    <div class="divider"></div>
+
+    <div class="quicklink-wrapper">
+        <div class="social-list">
+
+            <a href="https://t.me/+g58KFJfhZjIwNzll" class="social-link" style="background-color: rgb(55, 119, 202)">
+              <i class='fa fa-telegram' style='color:white'></i>
+            </a>
+      
+            <a href="https://instagram.com/thunderblasttv?igshid=ZDdkNTZiNTM=" class="social-link" style="background-image: linear-gradient( purple ,pink ,red , yellow);">
+              <i class='fa fa-instagram' style="color:white"></i>
+            </a>
+  
+            <a href="https://twitter.com/ThunderBlastTv" class="social-link" style="background-color: rgb(55, 119, 202)">
+              <i class='fa fa-twitter' style='color:white'></i>
+            </a>
+      </div>
+      <br>
+      <div class="quicklink-list">
+        <div class="quicklink-list">
+          <a href="#" class="quicklink-link">Privacy</a>
+          <a href="#" class="quicklink-link">Term of Use</a>
+          <a href="#" class="quicklink-link">Contact Us</a>
+          <a href="#" class="quicklink-link">About Us</a>
+          <a href="#" class="quicklink-link">Disclaimer</a>
+      </div>
+    </div>
+      <br>
+
+      <div class="copyright">
+          <center>
+          &copy; 2023 ThunderBlastTv.All Rights Reserved
+          </center>
+        </div>
+  </div>
+</section>
+    
+    </body>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script>// Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</html>    

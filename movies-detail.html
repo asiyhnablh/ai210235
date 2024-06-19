@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1"/>
+
+     <!---Boxicons CDN Setup for icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/movies-detail.css"/>
+
+    <!--ICON ON TAB-->
+    <link rel="shorcut icon" href="image/favicon/favicon.png" type="image/x-ico"/>
+    
+    <!--GOOGLE LAPIS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!--TITLE ON TAB-->
+    <title>Movie Details</title>
+  </head>
+  <body>
+    <!----HEADER SECTION -->
+    <div class="header">
+      <div class="navbar">
+        <img src="image/logo/icon.png" alt="logo" />
+        <a href="homepage.html"><b>Home</b></a>
+        <a href="movie-page.html"><b>Movie</b></a>
+        <a href="tv-shows-page.html"><b>Tv Shows</b></a>
+        <a href="userspage.html" class="right"
+        ><i class="fa fa-user-circle" style="font-size: 30px;"></i
+      ></a>
+
+        <div class="search-container">
+          <form class="search-icon" action="/action_page.php" style="margin: auto; max-width: 300px;">
+            <input type="text" position="left" placeholder="Search.." name="search"/>
+            <button type="submit"><i class="fa fa-search"></i></button> 
+          </form>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <div class="container">
+      <div class="single-product">
+          <div class="row">
+              <div class="col-6">
+                  <div class="product-image">
+                      <div class="product-image-main">
+                          <img src="image/movies-detail/Top gun.jpg" alt="" id="product-main-image">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div class="product">
+                      <div class="product-title">
+                          <h2>Top Gun Maverick</h2>
+                      </div>
+                      <div class="product-rating">
+                          <span><i class="bx bxs-star"></i></span>
+                          <span><i class="bx bxs-star"></i></span>
+                          <span><i class="bx bxs-star"></i></span>
+                          <span><i class="bx bxs-star"></i></span>
+                          <span><i class="bx bxs-star"></i></span>
+                          <span class="review">(47 Review)</span>
+                      </div>
+
+                      <div class="product-details">
+                          <h3>About</h3>
+                          <p>After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.</p>
+                      </div>
+                    
+                    
+                      <span class="divider"></span>
+                      <div>
+                      <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://z9vety.csb.app">
+                        <i class="bi bi-play-fill" style="font-size: 20px;"></i>Play</a>
+                      <a class="btn btn-primary btn-heart js-scroll-trigger" href="#">
+                          <i class="bi bi-heart-fill" style="font-size: 15px;"> Add to My List</i></a>
+                                  
+              
+                      </div>
+                          <!-- a class="button buy-now"><i class='bx bxs-zap' href="https://xfsh85.csb.app" ></i> Play</a>
+                          <div class="button heart"><i class='bx bxs-heart' ></i> Add to My List</div>-->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> 
+
+<!--- #FOOTER SECTION --->
+
+   <section class="footer">
+
+      <div class="footer-container">
+  
+        <div class="divider"></div>
+  
+        <div class="quicklink-wrapper">
+            <div class="social-list">
+  
+                <a href="https://t.me/+g58KFJfhZjIwNzll" class="social-link" style="background-color: rgb(55, 119, 202)">
+                  <i class='fa fa-telegram' style='color:white'></i>
+                </a>
+          
+                <a href="https://www.instagram.com/accounts/login/" class="social-link" style="background-image: linear-gradient( purple ,pink ,red , yellow);">
+                  <i class='fa fa-instagram' style="color:white"></i>
+                </a>
+      
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" class="social-link" style="background-color: rgb(55, 119, 202)">
+                  <i class='fa fa-twitter' style='color:white'></i>
+                </a>
+          </div>
+          <br>
+          <div class="quicklink-list">
+              <a href="#" class="quicklink-link">Privacy</a>
+              <a href="#" class="quicklink-link">Term of Use</a>
+              <a href="#" class="quicklink-link">Contact Us</a>
+              <a href="#" class="quicklink-link">About Us</a>
+              <a href="#" class="quicklink-link">Disclaimer</a>
+          </div>
+          <br>
+  
+          <div class="copyright">
+              <center>
+              &copy; 2024 ThunderBlastTv.All Rights Reserved
+              </center>
+            </div>
+      </div>
+  </section>
+</body>
+
+<!--script-->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+</html>
